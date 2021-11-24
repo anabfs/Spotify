@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--CABEÇALHO DE CONFIGURAÇÃO-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>AnaFy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<!--CORPO-->
+
+<body>
+
+    <!-- TAG COM O CONTEÚDO MAIS IMPORTANTE-->
+    <main>
+
+        <!-- MENU OPÇÕES -->
+        <aside class="sidebarMenu">
+
+            <!--LOGO-->
+            <img src="./imagens/as.png" alt="Logo AnaFy">
+
+            <!--MENU-->
+            <nav class="menuNavegacao">
+
+                <!-- LISTA -->
+                <ul class="listaLinks">
+                    <li>
+                        <a href="https://www.linkedin.com/in/ana-beatriz-santos-148114203" style="text-decoration:none">
+                            <img src="./imagens/home.png" alt="Home"> Home
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://github.com/anabfs/" style="text-decoration:none">
+                            <img src="./imagens/browser.png" alt="Browser"> Browser
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ana-beatriz-santos-148114203" style="text-decoration:none">
+                            <img src="./imagens/liked.png" alt="Liked songs"> Liked songs
+                        </a>
+
+                    </li>
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- LISTA DE MÚSICAS -->
+        <section class="secaoMusicas">
+
+            <!-- CABEÇALHO DA SEÇÃO DE MÚSICA -->
+            <header class="cabecalho">
+
+                <div class="user">
+                    <img src="./imagens/user.png" alt="Usuário">
+                    <h2>Ana</h2>
+                </div>
+
+                <div class="qtdMusicas">
+                    <p>11 songs</p>
+                </div>
+
+            </header>
+
+            <!--LISTA DE MÚSICAS-->
+            <div class="areaListaMusicas">
+
+                <!-- BOTÃO PARA PAUSAR -->
+                <button id="btnPause">Pause</button>
+
+                <!-- CABEÇALHO DE INFORMAÇÕES DAS MÚSICAS-->
+                <div class="cabecalhoInfoMusica">
+                    <p class="primeiroItem">Title</p>
+                    <p>Artist</p>
+                    <p>Album</p>
+                </div>
+
+                <!-- MÚSICAS -->
+                <ul class="listaMusicas">
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!--PLAYER-->
+        <section class="areaPlayer">
+
+            <audio src="" id="saidaAudio"></audio>
+
+            <div class="infoMusicaAtual">
+                <figure class="imagemAlbum">
+                    <img id="fotoAlbum" src="" alt="Album">
+                    <figcaption>Legenda</figcaption>
+                </figure>
+
+                <div class="infoAlbum">
+                    <h2 id="nomeMusica"></h2>
+                    <p id="nomeArtista"></p>
+                </div>
+
+
+            </div>
+
+            <div class="areaPlayerCtrl">
+                <button id="btnControlPrev"></button>
+                <button id="btnControlPlay"></button>
+                <button id="btnControlNext"></button>
+            </div>
+
+            <div class="areaPlayerVolume">
+                <input type="range" max="1" value="1" step="0.1">
+            </div>
+
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
